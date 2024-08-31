@@ -11,4 +11,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
         data, addr = s.recvfrom(1024)
         if not data:
             break
-        s.sendto(data, addr)
+        s.sendto(data.upper(), addr)
