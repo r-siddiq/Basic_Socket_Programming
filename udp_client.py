@@ -13,6 +13,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
 
     byte_msg = message.encode('utf-8')
     s.sendall(byte_msg)
-    data = s.recv(PORT)
+    data = s.recv(1024)
 
 print("Received: {}".format(data.decode('utf-8')))
