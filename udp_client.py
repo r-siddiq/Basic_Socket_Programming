@@ -1,11 +1,9 @@
 """
------------------------------------------------------------------------------------------
 File Name: udp_client.py
 Author: Rahim Siddiq
 Date: 08/30/2024
 CST311 Programming Assignment 1
 Description: UDP client script sends a message to a server and receives a response
------------------------------------------------------------------------------------------
 """
 
 import socket

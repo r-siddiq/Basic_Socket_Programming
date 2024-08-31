@@ -3,7 +3,7 @@ File Name: udp_server.py
 Author: Rahim Siddiq
 Date: 08/30/2024
 CST311 Programming Assignment 1
-Description: UDP server script that listens on a specified ip and port. The server receives a message
+Description: UDP server script - listens on a specified ip and port. The server receives a message
     from a client, converts it to uppercase and returned the modified message back to the client.
 """
 
