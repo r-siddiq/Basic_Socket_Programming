@@ -7,13 +7,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.connect((HOST, PORT))
 
     while True:
-        message = input("Enter a message to send or type 'done' to quit")
+        message = input("Input sentence: ")
         if message.lower() == 'done':
-            print("Goodbye")
             break
 
     byte_msg = message.encode('utf-8')
     s.sendall(byte_msg)
-    data = s.recv(1024)
+    data = s.recv(PORT)
 
 print(f"Received: {data!r}".format(data.decode('utf-8')))
