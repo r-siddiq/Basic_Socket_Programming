@@ -1,7 +1,7 @@
 import socket
 
-HOST = ""  # todo: specify the server's hostname or IP address inside the quotes
-PORT =  # todo: specify the port number used by the server
+HOST = "127.0.0.1"  # todo: specify the server's hostname or IP address inside the quotes
+PORT = 12345 # todo: specify the port number used by the server
 
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.connect((HOST, PORT))
