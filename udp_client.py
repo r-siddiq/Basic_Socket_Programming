@@ -11,8 +11,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
         if message.lower() == 'done':
             break
 
-    byte_msg = message.encode('utf-8')
-    s.sendall(byte_msg)
-    data = s.recv(1024)
+        byte_msg = message.encode('utf-8')
+        s.sendall(byte_msg)
+        data = s.recv(1024)
 
-    print("Received: {}".format(data.decode('utf-8')))
+        print("Received: {}".format(data.decode('utf-8')))
