@@ -15,4 +15,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.sendall(byte_msg)
     data = s.recv(1024)
 
-print("Received: {}".format(data.decode('utf-8')))
+    print("Received: {}".format(data.decode('utf-8')))
