@@ -1,6 +1,6 @@
 import socket
 
-HOST = "127.0.0.1"  # todo: specify the correct hostname of IP address to communicate with the server.
+HOST = "10.0.0.1"  # todo: specify the correct hostname of IP address to communicate with the server.
 PORT = 12345  # todo: specify the correct port number to communicate with the server.
 
 # open a UDP socket
